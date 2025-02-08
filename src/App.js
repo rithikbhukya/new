@@ -1,5 +1,7 @@
 import React from 'react'
 import LocationButton from './LocationButton'
+import Jsgoogleapi from '../src/Jsgoogleapi'
+
 
 function App() {
   return (
@@ -7,6 +9,7 @@ function App() {
 
 
       <LocationButton />
+      <Jsgoogleapi />
     </div>
   )
 }
