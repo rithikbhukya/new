@@ -5,12 +5,11 @@ import Jsgoogleapi from '../src/Jsgoogleapi'
 
 function App() {
   return (
-    <div>
-
-
+    <div >
       <LocationButton />
       <Jsgoogleapi />
     </div>
+
   )
 }
 

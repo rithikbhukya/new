@@ -35,13 +35,13 @@ const LocationButton = () => {
     return (
         <div className="flex items-center justify-center h-screen bg-gradient-to-r from-purple-500 to-blue-500">
             <div className="bg-white shadow-2xl rounded-2xl p-8 text-center w-[350px] flex flex-col items-center">
-                <h2 className="text-2xl font-bold text-gray-700 mb-4">📍 Find My Location</h2>
+                <h2 className="text-2xl font-bold text-gray-700 mb-4">📍 Find My Location with browser geolocation</h2>
 
                 <button
                     onClick={getLocation}
                     className="px-6 py-3 bg-gradient-to-r from-blue-600 to-blue-400 text-white text-lg font-semibold rounded-full shadow-lg hover:scale-105 transition transform duration-300"
                 >
-                    Get My Location
+                    Fetch My Location
                 </button>
 
                 {location && (

@@ -14,12 +14,11 @@ const Jsgoogleapi = () => {
                     setLocation({
                         latitude: latitude.toFixed(6),
                         longitude: longitude.toFixed(6),
-                        accuracy: accuracy.toFixed(2), // Accuracy in meters
+                        accuracy: accuracy.toFixed(2),
                     });
 
                     setError(null);
 
-                    // Fetch address using Google API
                     getAddressFromCoords(latitude, longitude);
                 },
                 (error) => {
@@ -59,13 +58,13 @@ const Jsgoogleapi = () => {
     return (
         <div className="flex items-center justify-center min-h-screen bg-gradient-to-r from-blue-500 to-indigo-600">
             <div className="bg-white shadow-2xl rounded-2xl p-8 text-center w-[400px] flex flex-col items-center">
-                <h2 className="text-2xl font-bold text-gray-700 mb-4">📍 Get My Location</h2>
+                <h2 className="text-2xl font-bold text-gray-700 mb-4">📍 Get My Location Using Google Maps JavaScript API </h2>
 
                 <button
                     onClick={getLocation}
                     className="px-6 py-3 bg-gradient-to-r from-green-500 to-green-400 text-white text-lg font-semibold rounded-lg shadow-lg hover:scale-105 transition transform duration-300"
                 >
-                    Get My Location
+                    Locate Me
                 </button>
 
                 {location && (
